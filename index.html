@@ -11,24 +11,28 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Profile card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
+      <img
+        id="top-background"
+        src="images/bg-pattern-top.svg"
+        alt="background"
+      />
+      <img
+        id="bottom-background"
+        src="images/bg-pattern-bottom.svg"
+        alt="background"
+      />
       <div class="card">
         <section class="top-info">
           <img
@@ -40,21 +44,22 @@
         </section>
 
         <section class="name-location">
-          <h1>Victor Crest 26</h1>
-          <h3 class="location">London</h3>
+          <h1>Victor Crest &nbsp;&nbsp;&nbsp;<span class="grey">26</span></h1>
+          <h3 class="location grey thin">London</h3>
         </section>
+        <div class="line"></div>
         <section class="stats-section">
           <div id="followers" class="stats">
             <h3>80K</h3>
-            <p>Followers</p>
+            <p class="grey" thin>Followers</p>
           </div>
           <div id="likes" class="stats">
             <h3>803K</h3>
-            <p>Likes</p>
+            <p class="grey thin">Likes</p>
           </div>
           <div id="photos" class="stats">
             <h3>1.4K</h3>
-            <p>Photos</p>
+            <p class="grey thin">Photos</p>
           </div>
         </section>
         <div class="attribution">
